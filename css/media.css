@@ -1,0 +1,88 @@
+@media (max-width: 768px) {
+   
+    #iphone {
+      flex-direction: column;
+      text-align: center;
+    }
+
+   
+    #iphone img {
+      width: 70%;
+      margin-top: 20px;
+    }
+  
+    header {
+        
+      grid-template-rows: auto;
+      grid-template-columns: 100%;
+      grid-template-areas: 
+      "Rotary-Evaporator"
+      "iphone";
+      
+    }
+
+    #Rotary-Evaporator{
+        grid-area: Rotary-Evaporator;
+        padding-bottom:1.25rem;
+        padding-top: 0%;
+    }
+  #iphone{
+    grid-area: iphone;
+  }
+main  {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: auto  auto 2fr 2fr, 2fr 2fr;
+    grid-template-areas:
+      "keyboard games"
+      "imac imac"
+      "twitter icloud"
+      "twitter icloud"
+   "experience icloud"
+   "experience icloud"
+      "experiences experiences"
+    
+      "vision vision";
+      
+  }
+
+   
+
+
+
+
+  #keyboard {
+        grid-area:keyboard;
+    }
+
+#imac{
+    grid-area:imac;
+}
+
+#games{
+    grid-area:games;
+}
+
+#twitter{
+    grid-area:twitter;
+}
+
+#icloud{
+    grid-area:icloud;
+}
+
+#experience{
+    grid-area:experience;
+}
+
+#experiences{
+  grid-area:experiences;
+}
+#vision{
+    grid-area:vision;
+}
+  
+
+    
+  }
